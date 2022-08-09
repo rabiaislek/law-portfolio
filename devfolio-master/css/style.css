@@ -424,7 +424,7 @@ a:hover {
 .navbar-b.navbar-trans .nav-link,
 .navbar-b.navbar-reduce .nav-link {
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   font-weight: 600;
 }
 
@@ -3007,7 +3007,15 @@ a {
 }
 
 .phone {
- font-size: 1.4em;
+ font-size: 150%;
+}
+@media (max-width: 991px) {
+  .phone {
+    position: absolute;
+    top:15px;
+    right:25px;
+    font-size: 130%;
+  }
 }
 
  .logo {

@@ -1,8 +1,11 @@
 jQuery(document).ready(function($) {
   "use strict";
-
+  
   //Contact
   $('form.contactForm').submit(function() {
+
+console.log("islem gerceklesti")
+
     var f = $(this).find('.form-group'),
       ferror = false,
       emailExp = /^[^\s()<>@,;:\/]+@\w[\w\.-]+\.[a-z]{2,}$/i;
@@ -11,6 +14,7 @@ jQuery(document).ready(function($) {
 
       var i = $(this); // current input
       var rule = i.attr('data-rule');
+
 
       if (rule !== undefined) {
         var ierror = false; // error flag for current input
@@ -111,8 +115,74 @@ jQuery(document).ready(function($) {
         }
 
       }
+      
     });
     return false;
   });
 
 });
+ 
+
+
+// Mesaji localstorage e kaydetme ve alert
+
+// const obj = {
+//   name: "",
+//   email: "",
+//   subject: "",
+//   message: "",
+// }
+
+// // const myJSON = JSON.stringify(obj);
+// let formDOM = document.querySelector("#userForm");
+// formDOM.addEventListener('submit', formSubmit);
+// const alertDOM = document.querySelector('#alert')
+
+// const alertFunction = (value) => `
+// <div class="alert alert-warning alert-dismissible fade show" role="alert">
+// <strong>tebrikler</strong> ${value}
+// <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+//   <span aria-hidden="true">&times;</span>
+// </button>
+// </div>
+// `
+
+// function formSubmit(event) {
+//   console.log("form submit event", event);
+//   event.preventDefault();
+//   console.log("islem");
+//   // let obj = document.querySelector('#userForm')
+//   // localStorage.setItem('userForm', JSON.stringify(obj));
+
+//   let bilgiDOM = document.querySelector("#name");
+//   console.log('bilgidom', bilgiDOM)
+//   console.log('bilgidom val', bilgiDOM.value)
+//   localStorage.setItem("name", JSON.stringify(bilgiDOM.value));
+//   let bilgiDOM2 = document.querySelector("#email");
+//   localStorage.setItem("email", JSON.stringify(bilgiDOM2.value));
+//   let bilgiDOM3 = document.querySelector("#subject");
+//   localStorage.setItem("subject", JSON.stringify(bilgiDOM3.value));
+//   let bilgiDOM4 = document.querySelector("#message");
+//   localStorage.setItem("message", JSON.stringify(bilgiDOM4.value));
+
+ 
+//   obj.name = bilgiDOM.value;
+//   obj.email = bilgiDOM2.value;
+//   obj.subject = bilgiDOM3.value;
+//   obj.message = bilgiDOM4.value;
+
+//    localStorage.setItem("obj", JSON.stringify(obj));
+
+// if (bilgiDOM.value && bilgiDOM2.value && bilgiDOM3.value && bilgiDOM4.value) {
+
+//   alertDOM.innerHTML = alertFunction ( `${bilgiDOM.value} ${bilgiDOM2.value} ${bilgiDOM3.value} ${bilgiDOM4.value}"Mesajiniz alindi. Tesekkur ederiz."`)
+
+// }
+
+//   //  const myJSON = JSON.stringify(mobj);
+//   //  localStorage.setItem("testJSON", myJSON)
+//   //  let text = localStorage.getItem("testJSON");
+//   //  let obj = JSON.parse(text);
+//   //  document.getElementById("name").innerHTML = obj;
+// }
+
