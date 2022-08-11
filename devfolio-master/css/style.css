@@ -507,7 +507,7 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #0a0909;
+  background-color: #807979;
 }
 
 .navbar-b .navbar-brand {
@@ -3032,6 +3032,8 @@ a {
 
  .logo-phone {
   display: block !important;
+  position: relative;
+  left:-13em;
  }
 }
 
