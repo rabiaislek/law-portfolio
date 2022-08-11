@@ -3014,7 +3014,7 @@ a {
     position: absolute;
     top:15px;
     right:25px;
-    font-size: 130%;
+    font-size: 120%;
   }
 }
 
@@ -3024,4 +3024,18 @@ a {
    /* width: 200px;
   height: 100px;   */
 } 
+  
+@media (max-width: 768px) {
+ .logo {
+  display: none;
+ }
 
+ .logo-phone {
+  display: block !important;
+ }
+}
+
+
+.logo-phone {
+ display: none;
+}
