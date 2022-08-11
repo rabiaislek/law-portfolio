@@ -3012,8 +3012,8 @@ a {
 @media (max-width: 768px) {
   .phone {
     position: absolute;
-    top:15px;
-    right:25px;
+    top:0.9em;
+    right:1em;
     font-size: 120%;
   }
 }
@@ -3033,10 +3033,10 @@ a {
  .logo-phone {
   display: block !important;
   position: relative;
-  left:-13em;
+  left:-15em;
+  width: 3em;
  }
 }
-
 
 .logo-phone {
  display: none;
