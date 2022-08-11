@@ -3009,7 +3009,7 @@ a {
 .phone {
  font-size: 150%;
 }
-@media (max-width: 991px) {
+@media (max-width: 768px) {
   .phone {
     position: absolute;
     top:15px;
